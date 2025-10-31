@@ -1,7 +1,13 @@
+using Hugo_Torrico.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(@"Server=DESKTOP-QRTMQJ6\SQLEXPRESS;Database=Hugo_TorricoDB;Integrated Security=true; trustservercertificate=True;"));
 
 var app = builder.Build();
 
