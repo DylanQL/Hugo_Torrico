@@ -9,6 +9,7 @@ namespace Hugo_Torrico.Models
         public DateTime Date { get; set; }
         public string InvoiceNumber { get; set; } = string.Empty;
         public float Total { get; set; }
+        public bool Active { get; set; }
 
         // Foreign Key
         public Customer Customer { get; set; } = null!;

@@ -9,6 +9,7 @@ namespace Hugo_Torrico.Models
         public int ProductId { get; set; }
         public string Name { get; set; } = string.Empty;
         public float Price { get; set; }
+        public bool Active { get; set; }
 
         public ICollection<Detail> Details { get; set; } = new List<Detail>();
     }

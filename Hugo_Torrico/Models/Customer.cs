@@ -13,6 +13,8 @@ namespace Hugo_Torrico.Models
 
         public string DocumentNumber { get; set; } = string.Empty;
 
+        public bool Active { get; set; }
+
         public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
 }

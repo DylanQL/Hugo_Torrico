@@ -9,6 +9,7 @@ namespace Hugo_Torrico.Models
         public int Amount { get; set; }
         public float Price { get; set; }
         public float SubTotal { get; set; }
+        public bool Active { get; set; }
 
         // Foreign Key
         public Product Product { get; set; } = null!;
